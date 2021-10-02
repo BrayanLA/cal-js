@@ -12,16 +12,16 @@
         <h1>¿Que Operacion deseas hacer?</h1>
         <div class="btngrup">
             <form action="" name="calculadora" id="calculadora" >
-                <input type="textfield" class="numbers"name="n1" onclick="document.calculadora. n1.value+= prompt('Primer numero a operar')" placeholder="Primer valor" id="n1" readonly>
+                <input type="text" class="numbers"name="n1" onclick="document.calculadora.n1.value+= prompt('Primer numero a operar')" placeholder="Primer valor" id="n1" readonly>
                 
-                <input type="textfield" class="numbers" name="n2" onclick="document.calculadora. n2.value+= prompt('Segundo numero a operar')" placeholder="Segundo valor" id="n2" readonly>
+                <input type="text" class="numbers" name="n2" onclick="document.calculadora.n2.value+= prompt('Segundo numero a operar')" placeholder="Segundo valor" id="n2" readonly>
                 <br>
-                <input type="submit" class="calbtn" value="Reiniciar">
+                <button type="submit" class="calbtn" value="Reiniciar">Reiniciar</button>
                 <br>
-                <input type="submit" class="calbtn" onclick="suma()" value="Suma">
-                <input type="submit" class="calbtn" onclick="resta()" value="Resta">
-                <input type="submit" class="calbtn" onclick="multiplicacion()" value="Multiplicacion">
-                <input type="submit" class="calbtn" onclick="division()" value="Division">
+                <button type="button" name="operator" onclick="calculate(event)">+</button>
+                <button type="button" name="operator" onclick="calculate(event)">-</button>
+                <button type="button" name="operator" onclick="calculate(event)">*</button>
+                <button type="button" name="operator" onclick="calculate(event)">/</button>
             </form>
         </div>
     </div>
