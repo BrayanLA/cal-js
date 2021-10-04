@@ -10,18 +10,20 @@
 <body>
     <div class="calculadora">
         <h1>¿Que Operacion deseas hacer?</h1>
-        <div class="btngrup">
+        <div class="formfield">
             <form action="" name="calculadora" id="calculadora" >
-                <input type="text" class="numbers"name="n1" onclick="document.calculadora.n1.value+= prompt('Primer numero a operar')" placeholder="Primer valor" id="n1" readonly>
+                <input type="text" class="numbers" autocomplete="off" name="n1" placeholder="Primer valor" id="n1">
                 
-                <input type="text" class="numbers" name="n2" onclick="document.calculadora.n2.value+= prompt('Segundo numero a operar')" placeholder="Segundo valor" id="n2" readonly>
+                <input type="text" class="numbers" autocomplete="off" name="n2" placeholder="Segundo valor" id="n2">
                 <br>
                 <button type="submit" class="calbtn" value="Reiniciar">Reiniciar</button>
                 <br>
-                <button type="button" name="operator" onclick="calculate(event)">+</button>
-                <button type="button" name="operator" onclick="calculate(event)">-</button>
-                <button type="button" name="operator" onclick="calculate(event)">*</button>
-                <button type="button" name="operator" onclick="calculate(event)">/</button>
+                <div id="btngrup" class="btngrup">
+                <button id="button" type="button" name="operator">+</button>
+                <button id="button" type="button" name="operator">-</button>
+                <button id="button" type="button" name="operator">/</button>
+                <button id="button" type="button" name="operator">*</button>
+                </div>
             </form>
         </div>
     </div>
